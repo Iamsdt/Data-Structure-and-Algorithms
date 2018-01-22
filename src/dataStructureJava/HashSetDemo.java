@@ -1,8 +1,7 @@
 package dataStructureJava;
 
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.TreeSet;
 
 public class HashSetDemo {
     public static void main(String[] arg) {
@@ -15,23 +14,32 @@ public class HashSetDemo {
         HashSet<String> list = new HashSet<>();
 
         list.add("Shudipto");
-        list.add("Shudipto");
+        //list.add("Shudipto");
         list.add("Trafder");
-        list.add("Trafder");
+        //list.add("Trafder");
         list.add("Developer");
-        list.add("Developer");
+        //list.add("Developer");
 
-        //use java.util.Iterator
-        Iterator<String> iterable = list.iterator();
-
-        while (iterable.hasNext()){
-            System.out.println(iterable.next());
-        }
-
-        //another way, no need to iterator
-        System.out.println("\nAnother way");
         for (String s : list) {
             System.out.println(s);
         }
+
+        System.out.println("\nTreeSet\n");
+        //this is used for order data by alphabetically
+        // helpful to use in search algorithm
+        TreeSet<String> treeSet = new TreeSet<>();
+
+        treeSet.add("Shudipto");
+        //treeSet.add("Shudipto");
+        treeSet.add("Trafder");
+        //treeSet.add("Trafder");
+        treeSet.add("Developer");
+        //treeSet.add("Developer");
+
+        for (String s : treeSet) {
+            System.out.println(s);
+        }
+
+
     }
 }
