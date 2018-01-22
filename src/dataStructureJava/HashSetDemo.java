@@ -1,23 +1,18 @@
 package dataStructureJava;
 
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class LinkedListDemo {
-    public static void main(String[] arg){
+public class HashSetDemo {
+    public static void main(String[] arg) {
         /*
-         * Linked List vs Array List
-         *
-         * If there is lot of update and delete then use linked list
-         * because it is faster than array list
-         * here just element linked each other
-         *
-         * If their is only for read data
-         * then use array list
-         * it faster to insert and read than linked list
+         *HashSet vs LinkedList
+         * same as LinkedList
+         * But in hasSet element can not be duplicate
          */
 
-        LinkedList<String> list = new LinkedList<>();
+        HashSet<String> list = new HashSet<>();
 
         list.add("Shudipto");
         list.add("Shudipto");
@@ -38,6 +33,5 @@ public class LinkedListDemo {
         for (String s : list) {
             System.out.println(s);
         }
-
     }
 }
