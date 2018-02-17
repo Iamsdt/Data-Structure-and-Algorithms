@@ -44,5 +44,16 @@ public class BinarySearch {
         }
     }
 
+    // first dived to low and high
+    // and find medium
+    //mid = low + ((high-low)/2);
+
+    //then check is medium is less or grater than
+    // search number
+    // and chose one part
+
+    // then do same thing again
+
+
     // so here big o is logN
 }
