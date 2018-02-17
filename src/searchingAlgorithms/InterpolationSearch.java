@@ -1,6 +1,6 @@
 package searchingAlgorithms;
 
-public class BinarySearch {
+public class InterpolationSearch {
 
     public static void main(String[] arg){
         DataSet dataSet = new DataSet(10000000);
@@ -21,7 +21,10 @@ public class BinarySearch {
                 break;
             }
 
-            mid = low + ((high-low)/2);
+            mid = low + ((high - low)/(dataSet.data[high]
+                    - dataSet.data[low]))
+                    * (search - dataSet.data[low]);
+
             dataSet.numberOfTry++;
 
             if (dataSet.data[mid] == search){
@@ -44,17 +47,5 @@ public class BinarySearch {
         }
     }
 
-    // first dived to low and high
-    // and find medium
-    //formula
-    //mid = low + ((high-low)/2);
-
-    //then check is medium is less or grater than
-    // search number
-    // and chose one part
-
-    // then do same thing again
-
-
-    // so here big o is logN
+    //for dictionary is is very productive
 }

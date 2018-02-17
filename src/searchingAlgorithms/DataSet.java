@@ -6,10 +6,10 @@ public class DataSet {
 
     int numberOfTry;
 
-    public DataSet(int size) {
+    DataSet(int size) {
         data = new int[size];
 
-        for (int i = 1; i < size; i++) {
+        for (int i = 1; i <= size; i++) {
             data[i - 1] = i;
         }
 
