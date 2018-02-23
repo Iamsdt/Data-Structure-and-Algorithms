@@ -14,6 +14,7 @@ public class SelectionSort {
                 }
             }
 
+
             if (index != i){
                 int temp = array[index];
                 array[index] = array[i];
