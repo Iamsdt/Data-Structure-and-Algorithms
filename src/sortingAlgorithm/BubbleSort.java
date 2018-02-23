@@ -32,4 +32,8 @@ public class BubbleSort {
 
 
     // big o is n square
+
+    // compare, first element and second element
+    // if one is bigger than another then swap it
+    // continue this process
 }
