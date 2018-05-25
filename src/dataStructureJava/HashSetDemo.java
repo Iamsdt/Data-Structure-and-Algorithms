@@ -39,7 +39,5 @@ public class HashSetDemo {
         for (String s : treeSet) {
             System.out.println(s);
         }
-
-
     }
 }

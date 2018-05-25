@@ -28,7 +28,6 @@ public class LinkedListDemo {
 
         //use java.util.Iterator
         Iterator<String> iterable = list.iterator();
-
         while (iterable.hasNext()){
             System.out.println(iterable.next());
         }
