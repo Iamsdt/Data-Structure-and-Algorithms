@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
 
     val data = DataK(100000)
 
-    val search = 99999;
+    val search = 99999
     var numberOfTry = 0
 
     var result = - 1
