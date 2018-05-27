@@ -44,6 +44,8 @@ public class BinarySearch {
         }
     }
 
+    //the main condition is list must be sorted
+
     // first dived to low and high
     // and find medium
     //formula
