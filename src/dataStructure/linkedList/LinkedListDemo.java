@@ -13,4 +13,7 @@ public class LinkedListDemo {
         ls.display();
     }
 
+    //difference between linked list vs array
+    //in array all data are stored in sequence in memory
+    //but in linked list data can store any position in memory
 }

@@ -2,7 +2,7 @@ package dataStructure.linkedList;
 
 public class MyLinkedList<T> {
 
-    private Node head;
+    private Node<T> head;
 
     MyLinkedList() {
         head = null;
@@ -13,15 +13,15 @@ public class MyLinkedList<T> {
     }
 
     public void display(){
-        Node newNode = head;
+        Node<T> newNode = head;
         while (newNode != null){
             System.out.println(newNode.value);
             newNode = newNode.next;
         }
     }
 
-    public void add(Object value){
-        Node newNode = new Node(value,null);
+    public void add(T value){
+        Node<T> newNode = new Node<>(value, null);
         if (head == null) {
             head = newNode;
         } else {

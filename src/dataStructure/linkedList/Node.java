@@ -1,11 +1,11 @@
 package dataStructure.linkedList;
 
-public class Node {
+public class Node<T> {
 
-    Object value;
-    Node next;
+    T value;
+    Node<T> next;
 
-    Node(Object value, Node next) {
+    Node(T value, Node<T> next) {
         this.value = value;
         this.next = next;
     }
