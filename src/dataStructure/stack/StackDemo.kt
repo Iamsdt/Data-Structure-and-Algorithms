@@ -39,7 +39,7 @@ class Stack<T> {
     }
 
     val length:Int get() {
-        return if (top == -2) 0
+        return if (top == -1) 0
         else top + 1
     }
 
