@@ -2,7 +2,8 @@ package searchingAlgorithms
 
 class DataK(size:Int){
 
-    val array: Array<Any> = Array(size,init = {})
+    val array: Array<Int> = Array(size,{i -> i})
+    var numberOfTry = 0
 
     init {
         for (i in 1 until size){

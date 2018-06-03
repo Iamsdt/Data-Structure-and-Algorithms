@@ -49,7 +49,7 @@ fun main(args: Array<String>) {
     println("$v : $r")
 }
 
-fun search(args: Array<Any>, search: Int): Pair<Int,Int> {
+fun search(args: Array<Int>, search: Int): Pair<Int,Int> {
 
     var left = 0
     var right = args.size - 1
@@ -65,10 +65,10 @@ fun search(args: Array<Any>, search: Int): Pair<Int,Int> {
         val i = args[mid]
 
         if (i == search) {
-            return Pair(i as Int,numberOfTry)
+            return Pair(i,numberOfTry)
         }
 
-        if (mid < i as Int) {
+        if (mid < i) {
             left = mid + 1
         } else{
             right = mid - 1
