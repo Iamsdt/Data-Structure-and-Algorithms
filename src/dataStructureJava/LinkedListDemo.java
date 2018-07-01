@@ -38,5 +38,7 @@ public class LinkedListDemo {
             System.out.println(s);
         }
 
+        list.remove("DEveloper");
+
     }
 }
