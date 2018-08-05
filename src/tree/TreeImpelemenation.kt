@@ -18,6 +18,6 @@ of children
 of nodes which at level 1 will be at level 2 ...
 10. Height: the total number of edge from leaf node to a particular node in the longest path
 is called as Height of that node
-11. Depth
-//shown video 8:00 min tree 1
+11. Depth: the total number of edges from root to a particular node is called Depth
+12. path: the sequences of Nodes and Edges from one node to another node is called as Path
  */
