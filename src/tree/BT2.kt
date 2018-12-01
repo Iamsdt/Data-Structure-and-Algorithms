@@ -73,4 +73,4 @@ private class BinaryTree {
     }
 }
 
-private class Node(var value: Int, var left: Node?, var right: Node?)
+class Node(var value: Int, var left: Node?, var right: Node?)

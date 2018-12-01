@@ -7,75 +7,71 @@ class BTJava {
 
         Node start = new Node(20, null, null);
 
-        tree.add(null, start);
-
-        tree.search(20, start);
-
     }
 
-}
 
-class BinaryTree {
+    static class BinaryTree {
 
-    Node root;
+        Node root;
 
-    public BinaryTree() {
-        root = null;
-    }
-
-    public void add(Node start, Node newNode) {
-        if (root == null) {
-            root = newNode;
-            return;
+        public BinaryTree() {
+            root = null;
         }
 
-        if (newNode.value > start.value) {
-            if (start.right == null) {
-                start.right = newNode;
+        public void add(Node start, Node newNode) {
+            if (root == null) {
+                root = newNode;
+                return;
             }
 
-            add(start.right, newNode);
-        }
+            if (newNode.value > start.value) {
+                if (start.right == null) {
+                    start.right = newNode;
+                }
 
-        if (newNode.value < start.value) {
-            if (start.left == null) {
-                start.left = newNode;
+                add(start.right, newNode);
             }
 
-            add(start.left, newNode);
+            if (newNode.value < start.value) {
+                if (start.left == null) {
+                    start.left = newNode;
+                }
+
+                add(start.left, newNode);
+            }
+
         }
 
-    }
+        public void search(int value, Node start) {
 
-    public void search(int value, Node start) {
+            if (start == null) {
+                throw new RuntimeException("Node not find");
+            }
 
-        if (start == null) {
-            throw new RuntimeException("Node not find");
+            if (start.value == value)
+                System.out.println("Search Found " + value);
+
+            if (value > start.value) {
+                search(value, start.right);
+            }
+
+            if (value > start.value) {
+                search(value, start.left);
+            }
+
         }
 
-        if (start.value == value)
-            System.out.println("Search Found " + value);
+        class Node {
 
-        if (value > start.value) {
-            search(value, start.right);
+            int value;
+            Node left;
+            Node right;
+
+            public Node(int value, Node left, Node right) {
+                this.value = value;
+                this.left = left;
+                this.right = right;
+            }
         }
-
-        if (value > start.value) {
-            search(value, start.left);
-        }
-
-    }
-}
-
-class Node {
-
-    int value;
-    Node left;
-    Node right;
-
-    public Node(int value, Node left, Node right) {
-        this.value = value;
-        this.left = left;
-        this.right = right;
     }
 }
