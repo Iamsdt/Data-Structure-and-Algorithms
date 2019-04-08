@@ -34,7 +34,7 @@ fun main(args: Array<String>) {
 
 class CircularQueueK(size: Int){
 
-    private val list:Array<Any> = Array(size,{ i: Int -> i })
+    private val list:Array<Any> = Array(size) { i: Int -> i }
     private var head = 0
     private var tail = 0
 
@@ -59,6 +59,8 @@ class CircularQueueK(size: Int){
         return a
     }
 
+    //say size 10 head 0 tail 9
+    // 10 % 10 == 0
     fun isFull() = (tail + 1) % list.size == head
 
     fun isEmpty() = head == tail
