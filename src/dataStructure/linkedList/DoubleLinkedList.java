@@ -1,17 +1,32 @@
 package dataStructure.linkedList;
 
-/*Double Linked list*/
+/* Double Linked list */
 public class DoubleLinkedList<T> {
 
     private NodeD head;
 
-    public void delete() {
+    public void delete(Object value) {
         if (head == null) {
             throw new RuntimeException("List is empty");
         }
 
-        head = head.next;
-        head.previous = null;
+        //if  this is the first node
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+
+        NodeD temp = head;
+
+        while (temp.next != null) {
+            if (temp.value == value) {
+                break;
+            }
+
+            temp = temp.next;
+        }
+
+        temp.previous.next = temp.next;
     }
 
     public void display() {
@@ -27,6 +42,7 @@ public class DoubleLinkedList<T> {
             head = new NodeD(value, null, null);
         } else {
             head = new NodeD(value, head, null);
+            head.next.previous = head;
         }
     }
 
@@ -40,7 +56,7 @@ public class DoubleLinkedList<T> {
                 temp = temp.next;
             }
 
-            temp.next = new NodeD(value, null, null);
+            temp.next = new NodeD(value, null, temp);
         }
     }
 

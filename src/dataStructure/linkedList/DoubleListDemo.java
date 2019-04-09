@@ -8,7 +8,7 @@ public class DoubleListDemo {
         ls.addFirst("Trafder");
 
         ls.display();
-        ls.delete();
+        ls.delete("Himu");
         System.out.println("\nAfter Delete");
         ls.addLast("Bangladesh");
         ls.addLast("India");
