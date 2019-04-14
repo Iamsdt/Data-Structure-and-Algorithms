@@ -37,8 +37,8 @@ fun main(args: Array<String>) {
     val data = DataK(10)
     val search:Int = 3
 
-    var low = 0;
-    var mid = 1;
+    var low = 0
+    var mid: Int
     var high = data.array.size - 1
 
     var isFound = false

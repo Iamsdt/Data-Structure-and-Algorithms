@@ -1,6 +1,6 @@
 package searchingAlgorithms;
 
-public class DataSet {
+class DataSet {
 
     int data[];
 
