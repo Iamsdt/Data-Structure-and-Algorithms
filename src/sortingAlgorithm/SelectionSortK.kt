@@ -60,6 +60,6 @@ private fun selectionSort(array: Array<Int>) {
 fun main(args: Array<String>) {
     val array = arrayOf(10,5,8,9,1)
     println("Before sorting\n${Arrays.toString(array)}")
-    selectionSort(array = array);
+    selectionSort(array = array)
     println("After sorting\n${Arrays.toString(array)}")
 }

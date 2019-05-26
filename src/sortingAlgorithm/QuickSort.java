@@ -64,7 +64,7 @@ public class QuickSort {
      *
      * then it davide a single array to two separate array
      *
-     * then it check the first element is grater than pivate
+     * then it check the first element is grater than pivot
      * if true then stop checking for first array
      * now check it for second array
      * if true then swap the two number
