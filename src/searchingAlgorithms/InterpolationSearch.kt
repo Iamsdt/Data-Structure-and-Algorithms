@@ -35,7 +35,7 @@ mid = 0 + ( 9 - 0 / 10 - 0) * ( 5 - 0)
 
 fun main(args: Array<String>) {
     val data = DataK(10)
-    val search:Int = 3
+    val search = 3
 
     var low = 0
     var mid: Int
